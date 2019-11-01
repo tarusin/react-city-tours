@@ -1,0 +1,54 @@
+@import "../../index";
+
+.tour {
+  background: $mainGray;
+  border-radius: .8em;
+  margin: 1em 0;
+  overflow: hidden;
+  img {
+    width: 100%;
+    display: block;
+  }
+  &:hover {
+    .close-btn {
+      opacity: 1;
+    }
+  }
+}
+
+.img-container {
+  position: relative;
+}
+.close-btn {
+  position: absolute;
+  display: block;
+  top: 5%;
+  right: 5%;
+  color: $mainGreen;
+  font-size: 2em;
+  cursor: pointer;
+  transition: all .3s linear;
+  opacity: 0;
+}
+
+.tour-info {
+  padding: 1em .5em;
+  h3 {
+    text-transform: uppercase;
+    color: $mainGreen;
+  }
+  h4 {
+    text-transform: capitalize;
+    color: $mainBlack;
+    margin: .2em 0 .6em;
+  }
+  h5 {
+    text-transform: capitalize;
+    span {
+      color: $mainGreen;
+      margin: .5em;
+      font-size: 1.2em;
+      cursor: pointer;
+    }
+  }
+}
